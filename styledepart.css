@@ -1,0 +1,850 @@
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header{
+    height: 160px;
+    padding-top: 10px;
+    padding-left: 30px;
+    background-color: aliceblue;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 100;
+    display: flex;
+}
+
+.logo{
+    height: 150px;
+    width: 200px;
+}
+
+.h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 80px;
+    color:rgb(56, 5, 98);
+}
+@media only screen and (max-width: 500px) {
+  .h1 {font-size: 20px}
+}
+
+.clg{
+    text-align: center;
+    font-size: 30px;
+    padding-left: 80px;
+}
+@media only screen and (max-width: 500px) {
+  .clg {font-size: 15px}
+}
+.uni{
+    text-align: center;
+    color:blue;
+    font-size: 20px;
+    padding-left: 80px;
+}
+@media only screen and (max-width: 500px) {
+  .uni {font-size: 10px}
+}
+.add{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    padding-left: 80px;
+}
+@media only screen and (max-width: 300px) {
+  .add {font-size: 10px}
+}
+.loginContainer{
+    padding: 50px;
+    position: relative;
+    left: 100px;
+}
+
+.popup{
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #0f8b66;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;   
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: white ;
+    color: #0f8b66;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  }
+  .admin{
+    color: #0f8b66;
+    text-decoration: none;
+  }
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(56, 5, 98);
+    
+
+}
+
+.a{
+    display: inline;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 50px;
+    top: 10px;
+    margin-left: 70px;
+    padding-top: 30px;
+    text-decoration: none;
+}
+
+.a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.a:hover::after{
+  transform: scaleX(1);
+}
+.a:checked{
+    transform: scaleX(1);
+}
+.showSlides{
+    height: 620px;
+    width: 100%;
+    background-color: aliceblue;
+    justify-items: center;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.image{
+    margin: 0px;
+    height: 620px;
+    width: 100%;
+
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.head{
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center;
+    color: rgb(56, 5, 98);
+}
+
+.card{
+    width: 75vw;
+    margin:30px;
+    margin-left: 180px;
+    padding: 20px;
+    background-color: aliceblue;
+    display: flex;
+    border-radius: 25px;
+    border: 10px solid rgb(56, 5, 98);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+}
+
+.aboutcard{
+    display: flex;
+    padding: 50px;
+}
+.aboutcard2{
+    display: flex;
+    padding: 50px;
+    background-color: aliceblue;
+}
+.aboutimg{
+    height: 500px;
+    width: 750px;
+    margin: 20px;
+}
+
+.abouttext{
+    font-size: 20px;
+    color: rgb(56, 5, 98);
+    margin: 20px;
+    text-align: justify;
+}
+
+.messagecard{
+   background-color: aliceblue;
+   padding: 20px;
+}
+.message{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(56, 5, 98);
+} 
+
+.cardimg{
+    height:450px;
+    width: 600px;
+}
+
+.PEOS{
+  text-align: center;
+  font-size: 20px;
+  color:  rgb(56, 5, 98);
+  justify-content: center;
+  padding: 30px;
+  font-weight: 100;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.vmg{
+    display: flex;
+}
+
+.card1{
+    height: 550px;
+    width: 400px;
+    margin: 60px;
+    background-color: aliceblue;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+.vission{
+    margin: 40px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.mission{
+    text-align: center;
+    color: rgb(56, 5, 98);
+    font-size: 25px;
+}
+
+.goal{
+    text-align: center;
+    color: rgb(56, 5, 98);
+    font-size: 20px;
+    font-weight: lighter;
+}
+.information{
+    font-size: 19px;
+    font-weight: 100; 
+    padding: 5px;
+    padding-left: 10px;
+    color:rgb(56, 5, 98);
+    text-align: justify;
+}
+
+.notice{
+  margin-left: 60px;
+    margin-top: 20px;
+    width: 40vw;
+    height: 350px;
+    border: 20px solid aliceblue;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: rgb(2, 102, 56);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    justify-content: center;
+
+}
+
+.announcement{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 40vw;
+    height: 350px;
+    border: 20px solid aliceblue;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    color: rgb(56, 5, 98);
+}
+
+.imp{
+    display: flex;
+    padding: 30px;
+    padding-left: 50px;
+    padding-top: 10px;
+    background-color: rgb(56, 5, 98);
+}
+
+.lg{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+
+.hed{
+    text-align: center;
+    color: rgb(56, 5, 98);
+}
+
+footer{
+    width: 100%;
+    color: white;
+    background-color: rgb(56, 5, 98);
+    display: flex;
+}
+.footerlast{
+  height: fit-content;
+  width: 100%;
+    color: white;
+    background-color: rgb(56, 5, 98);
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 40px;
+}
+.h2{
+    margin-bottom: 5px;
+}
+.f{
+    color: white;
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.f:hover{
+    color:  #0f8b66;
+}
+
+#visitorCount{
+  height: 50px;
+  width: 80px;
+  background-color: #0f8b66;
+  border: 10px solid white;
+  font-size: 20px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.foot{
+    margin-top: 30px;
+    margin-left: 90px;
+}
+li{
+  margin: 10px;
+}
+
+/* faculty page style*/
+
+.background{
+    height: 500px;
+    width: 100%;
+}
+.heading{
+    height: 50px;
+   background-color: black;
+   opacity: 0.5;
+   margin-top: -300px;
+   margin-left: 600px;
+   color: white;
+   width: 300px;
+   padding: 20px
+}
+
+.outer{
+  height: 500px;
+  width: 100%;
+  background-image: url(department.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.inner{
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  background-color: black;
+  opacity: 0.5;
+  position: relative;
+  left: 45%;
+  top: 200px;
+}
+
+.headline{
+  text-align: center;
+  font-size: 50px;
+  color: white;
+
+}
+
+.contain{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.faculty-box {
+    color: rgb(56, 5, 98);
+    background-color:aliceblue;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    width: 600px;
+    height: 300px;
+    justify-content: center;
+    display: flex;
+}
+
+.facultyimg{
+  height: 250px;
+  width: 300px ;
+}
+.faculty-box h2 {
+    margin-top: 0;
+}
+
+.teach{
+  justify-content: center;
+  text-align: center;
+  color: rgb(56, 5, 98);
+  margin: 20px;
+  margin-left: 46%;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.dis{
+  display: flex;
+}
+.nonteaching{
+  height: 300px;
+  width: 300px;
+  padding: 20px;
+  background-color: aliceblue;
+  margin-left: 60px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+.on{
+  color: rgb(56, 5, 98);
+  margin-left: 30px;
+}
+
+.one {
+    margin-left: 500px;
+    color: rgb(56, 5, 98);
+}
+
+.row1,.row2,.row3,.row4,.row5{
+    display: flex;
+}
+
+/* curriculum page css*/
+
+ /* Basic CSS Styles */
+ body {
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+ .col1 {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.main{
+  background-color: aliceblue;
+}
+
+/* Custom CSS Styles */
+/* You can customize these styles further as per your requirements */
+.year-header {
+    background-color:#0f8b66;
+    color: #fff;
+}
+
+.year-header td {
+    font-weight: bold;
+}
+
+.second-year {
+    background-color: white;
+    color:rgb(56, 5, 98);
+}
+
+.third-year {
+    background-color: white;
+    color:rgb(56, 5, 98);
+}
+
+.fourth-year {
+    background-color: white;
+    color:rgb(56, 5, 98);
+}
+.li{
+  color:rgb(56, 5, 98);
+
+}
+
+.hea{
+margin-top: 30px;
+color:rgb(56, 5, 98);
+}
+
+/* laboratories*/
+.back{
+    background-color: aliceblue;
+    height: 600px;
+}
+.lab{
+    height: 600px;
+    width: 600px;
+    border: 5px solid rgb(56, 5, 98);
+    margin: 50px;
+}
+.labhead{
+    color: rgb(56, 5, 98);
+    margin: 10px;
+    margin-left: 45%;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.labcontainer{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* image gallery*/
+  
+  img.gallery:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  div.gallery img {
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* The Modal (background) */
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+  
+
+/*event*/
+.outer2{
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  background-color: white;
+  color: rgb(56, 5, 98);
+  margin-top: -630px;
+  margin-bottom: 700px;
+  margin-left: 42%;
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 100;
+}
+.inner2{
+    width: 75%;
+    height: 600px;
+    border: 2px solid #0f8b66;
+    padding: 30px;
+    padding-bottom: 30px;
+    margin-left: 13%;
+    margin-top: 30px;
+    background-color: white;
+}
+
+.image1{
+  height: 500px;
+  width: 100%;
+}
+.textinfo{
+  color: rgb(56, 5, 98);
+  font-size: 14px;
+}
+
+table{
+  background-color: aliceblue;
+  border: 2px solid rgb(56, 5, 98);
+}
+th{
+  background-color: #0f8b66;
+  color: white;
+  border: 2px solid rgb(56, 5, 98);
+}
+td{
+  border: 2px solid rgb(56, 5, 98);
+}
+.col{
+  border: 1px solid #ddd;
+    padding: 10px;
+    padding-left: 250px;
+    color: rgb(56, 5, 98);
+}
+
+.cesa{
+  justify-content: center;
+  color: rgb(56, 5, 98);
+  margin-left: 30%;
+  font-size: 30px;
+}
+.cesalogo{
+  justify-content: center;
+  align-items: center;
+  color: rgb(56, 5, 98);
+  margin-left: 25%;
+  height: 50px;
+  width: 50px;
+}
+.logocesa{
+  margin-top: 30px;
+}
+.map{
+  height: 500px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+.HOD{
+  background-color: aliceblue;
+  height: 200px;
+  width: 400px;
+  color: rgb(56, 5, 98);
+  margin-left: 40%;
+  margin-top: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  padding-left: 50px;
+  padding-top: 20px;
+ 
+}
+
+cony{
+  display: flex;
+  
+}
